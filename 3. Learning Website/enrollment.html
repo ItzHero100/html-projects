@@ -26,7 +26,94 @@
     </header>
     <hr>
     <main>
+        <form>
+            <h1><u>Student Enrollment Form</u></h1>
+            <section>
+                <h2>Student Information</h2>
+                <!-- Name  -->
+                <label for="first-name">First Name:</label>
+                <input type="text" name="first-name" id="first-name" placeholder="First Name" required>
+                <label for="last-name">Last Name:</label>
+                <input type="text" name="last-name" id="last-name" placeholder="Last Name" required>
 
+                <br>
+                <!-- Date of Birth -->
+                <label for="date-of-birth">Birth Date:</label>
+                <input type="date" name="date-of-birth" id="date-of-birth" required>
+
+                <br>
+                <!-- Gender -->
+                <label for="gender">Gender: </label>
+                <br>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="Male">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="Female">
+
+                <br>
+                <!-- Address -->
+                <label for="address">Student Address:</label>
+                <textarea name="address" id="address" placeholder="Full address" required></textarea>
+
+                <br>
+                <!-- Email -->
+                <label for="student-email">Student Email:</label>
+                <input type="email" name="student-email" id="student-email" placeholder="youremail@mail.com" required>
+
+                <br>
+                <!-- Contact  -->
+                <label for="student-number">Contact Number:</label>
+                <input type="tel" name="student-number" id="student-number" placeholder="+880-10000-00000" required>
+
+            </section>
+            <section>
+                <h2>Parent/Guardian Information</h2>
+
+                <!-- Parent Name -->
+                <label for="parent-name">Parent/Guardian Name: </label>
+                <input type="text" name="parent-name" id="parent-name" placeholder="Full Name" required>
+
+                <br>
+                <!-- Parent Status -->
+                <label for="parent-status">Relationship to Student: </label>
+                <input type="text" name="parent-status" id="parent-status" placeholder="Ex. Mother/Father" required>
+
+                <br>
+                <!-- Contact Info -->
+                <label for="parent-number">Contact Number:</label>
+                <input type="tel" name="parent-number" id="parent-number" placeholder="+880-10000-00000" required>
+
+                <br>
+                <!-- Email info -->
+                <label for="parent-email">Email:</label>
+                <input type="email" name="parent-email" id="parent-email" placeholder="parentemail@mail.com" required>
+            </section>
+            <section>
+                <h2>Account Information</h2>
+                <!-- Username -->
+                <label for="user-name">Create Username:</label>
+                <input type="text" name="user-name" id="user-name" placeholder="Create your username" required>
+
+                <br>
+                <!-- Password -->
+                <label for="password">Create Password:</label>
+                <input type="password" name="password" id="password" placeholder="********" required>
+
+                <br>
+                <!-- confirm password -->
+                <label for="confirm-pass">Confirm Password:</label>
+                <input type="password" name="confirm-pass" id="confirm-pass" placeholder="********" required>
+
+                <br>
+                <!-- Terms and Service Box -->
+                <input type="checkbox" name="term-service" id="term-service" required>
+                <label for="term-service">I agree to the <a href="terms-and-conditions.html">Terms and
+                        Conditions</a></label>
+            </section>
+
+            <br>
+            <button type="submit">Submit</button>
+        </form>
     </main>
     <hr>
     <footer>
